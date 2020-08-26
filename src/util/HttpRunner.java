@@ -8,7 +8,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.StringTokenizer;
 
-public class HttpWorker {
+public class HttpRunner {
     private static final Integer PORT = 8080;
     public static ServerSocket serverSocket;
     public static Socket socket;
@@ -17,13 +17,13 @@ public class HttpWorker {
     private static String _HTML;
     private static String JSON;
 
-    public HttpWorker(){
+    public HttpRunner(){
     }
 
     /**
      * Does server connection and wait for acceptance
      */
-    public static void connect() {
+    public static void run() {
         new Thread() {
             @Override
             public void run() {
